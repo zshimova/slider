@@ -1,0 +1,154 @@
+body {
+    background-color: #131313;
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Yeseva One', serif;
+}
+
+.main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-items: end;
+}
+
+.left-section {
+    position: relative;
+}
+
+.main__title {
+    margin-bottom: 34px;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 'Yeseva One', serif;
+    line-height: -7%;
+}
+
+.main__title-img {
+    position: absolute;
+    content: url(./src/images/title-line.svg);
+    top: 70px;
+    left: 160px;
+}
+
+.info-block h3 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Yeseva One', serif;
+    letter-spacing: 0%;
+}
+
+.info-blocks {
+    display: none;
+}
+
+.info-block.active {
+    display: grid;
+    grid-gap: 34px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.left-section p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0%;
+    line-height: 191%;
+}
+
+.info-block span {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0;
+    line-height: 163.7%
+}
+
+p,
+span {
+    color: #fff;
+}
+
+.slider {
+    margin: 20px auto 0;
+    overflow: hidden;
+    max-width: 679px;
+    width: 100%;
+}
+
+.slider__line {
+    display: flex;
+}
+
+.slier__img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider__wrapper {
+    margin: 0 30px;
+    display: flex;
+    gap: 17px;
+}
+
+.arrows-section {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.slider__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid;
+}
+
+.active-dot {
+    background-color: #fff;
+}
+
+.slider__titles {
+    margin-bottom: 45px;
+    display: flex;
+    gap: 60px;
+}
+
+.slider__title {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-family: 'Yeseva One', serif;
+    line-height: 138.6%;
+}
+
+.slider__title.active {
+    padding-bottom: 7px;
+    border-bottom: 1px solid #E3B873;
+}
+
+.main__title,
+h3,
+.slider__title.active {
+    color: #E3B873;
+}
+
+button {
+    background: none;
+    background-color: transparent;
+    border: none;
+}
+
+
+/* MEDIA */
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        display: block;
+    }
+}

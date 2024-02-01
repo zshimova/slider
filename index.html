@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слайдер с фото</title>
+    <link rel="normalize" href="src/styles/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <div class="left-section">
+            <h1 class="main__title">COMPLETED <br> PROJECTS</h1>
+            <img class="main__title-img" src="./src/images/title-line.svg" alt="">
+            <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+            <div class="info-block info-blocks active">
+                <div>
+                    <h3>CITY:</h3>
+                    <span>Rostov-on-Don<br>LCD admiral</span>
+                </div>
+                <div>
+                    <h3>APARTMENT AREA:</h3>
+                    <span>81 m2</span>
+                </div>
+                <div>
+                    <h3>REPAIR TIME:</h3>
+                    <span>3.5 months</span>
+                </div>
+                <div>
+                    <h3>REPAIR COST:</h3>
+                    <span>Upon request</span>
+                </div>
+            </div>
+            <div class="info-block info-blocks">
+                <div>
+                    <h3>CITY:</h3>
+                    <span>Sochi<br>Thieves</span>
+                </div>
+                <div>
+                    <h3>APARTMENT AREA:</h3>
+                    <span>105 m2</span>
+                </div>
+                <div>
+                    <h3>REPAIR TIME:</h3>
+                    <span>4 months</span>
+                </div>
+                <div>
+                    <h3>REPAIR COST:</h3>
+                    <span>Upon request</span>
+                </div>
+            </div>
+            <div class="info-block info-blocks">
+                <div>
+                    <h3>CITY:</h3>
+                    <span>Rostov-on-Don<br>Patriotic</span>
+                </div>
+                <div>
+                    <h3>APARTMENT AREA:</h3>
+                    <span>93 m2</span>
+                </div>
+                <div>
+                    <h3>REPAIR TIME:</h3>
+                    <span>3 months</span>
+                </div>
+                <div>
+                    <h3>REPAIR COST:</h3>
+                    <span>Upon request</span>
+                </div>
+            </div>
+            <div class="arrows-section">
+                <button class="slider__btn-back">
+                    <img src="./src/images/arrow-left.svg" alt="">
+                </button>
+                <div class="slider__wrapper">
+                    <div class="slider__dot active-dot"></div>
+                    <div class="slider__dot"></div>
+                    <div class="slider__dot"></div>
+                </div>
+                <button class="slider__btn-next">
+                    <img src="./src/images/arrow-right.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="slider">
+                <div class="slider__titles">
+                    <h3 class="slider__title active">ROSTOV-ON-DON, ADMIRAL</h3>
+                    <h3 class="slider__title">SOCHI THIEVES</h3>
+                    <h3 class="slider__title">ROSTOV-ON-DON PATRIOTIC</h3>
+                </div>
+                <div class="slider__line">
+                    <img src="./src/images/admiral.png" alt="" class="slider__img">
+                    <img src="./src/images/sochi.png" alt="" class="slider__img">
+                    <img src="./src/images/patriotic.png" alt="" class="slider__img">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
